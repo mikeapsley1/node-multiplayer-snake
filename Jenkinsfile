@@ -15,6 +15,12 @@ node ('ubuntu-slave'){
          }
 
   
+    
+    stage('Qualys Scan') {
+        
+      }
+    
+    
     stage('Pull') {
          sh "docker-compose down"
          sh "docker-compose up -d"	
